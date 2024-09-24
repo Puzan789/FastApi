@@ -4,24 +4,36 @@ from datetime import date
 
 class General_url_choices(Enum):
     ROCK = 'rock'
-    ELECTRONICS = 'electronic'
+    ELECTRONIC = 'electronic'
     METAL = 'metal'
-    SMOOTH = 'soothing'
-
-
+    SOOTHING= 'soothing'
 
 class Album(BaseModel):
-    id:int
     title:str
     release_date:date
 
 
 class Band(BaseModel):
     #{"id": 1, "name": 'the kinks', "genre": 'Rock'},
-    id :int
+
     name:str
     genre:str
-    albums:list[Album]=[Album]
+    albums:list[Album]=[]
 
+
+
+
+class BandBase(BaseModel):
+
+    name:str
+    genre:str
+    albums:list[Album]=[]
+
+
+class BandCreate(BandBase):
+    pass
+
+class Bandwithid(BandBase):
+    id:int
 
 

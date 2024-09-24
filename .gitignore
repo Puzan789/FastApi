@@ -1,2 +1,19 @@
 /venv/
-**/__pycache__
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+
+# FastAPI specific
+instance/
+*.db
+*.sqlite3
+
+# VSCode
+.vscode/
+
+./crudme.md
+./readme.md
+
