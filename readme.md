@@ -1,4 +1,4 @@
-=
+
 To Learn FastAPI, I followed an excellent YouTube playlist that covers various core concepts:
 
 🎥 **YouTube Playlist for FastAPI**  
